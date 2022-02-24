@@ -16,6 +16,11 @@
   </p>
 <br />
 
+# Requirements
+- Node.JS
+- tsc
+- ts-node
+
 # Usage
 ## Compiling
 ```sh
@@ -23,7 +28,7 @@ $ tsc
 ```
 ## Running
 ```sh
-$ node dist/cli.js
+$ ts-node -r tsconfig-paths/register dist/cli.js
 ```
 
 ## Credits
