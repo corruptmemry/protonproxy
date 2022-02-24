@@ -16,6 +16,10 @@
   </p>
 <br />
 
+#### 🤔 What's this?
+ProtonProxy - is a proxy for Minecraft client written in Typescript.
+With ProtonProxy you can write and use plugins that modify/send new packets to Minecraft server.
+
 # Requirements
 
 - Node.JS
