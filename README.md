@@ -16,30 +16,28 @@
   </p>
 <br />
 
-#### 🤔 What's this?
+### 🤔 What's this?
 ProtonProxy - is a proxy for Minecraft client written in Typescript.
 With ProtonProxy you can write and use plugins that modify/send new packets to Minecraft server.
 
-# Requirements
+### 📦 Installation and using
+First of all, install Node.JS and npm.
+Then, you need to install required packages via 'npm':
+  ```sh
+  $ npm i typescript -g
+  $ npm i eslint -g
+  $ npm i --save-dev --save-exact prettier
+  $ npm i colors
+  $ npm i ts-node -g
+  ```
+And finally:
 
-- Node.JS
-- tsc
-- ts-node
+1. Configure `config.json`
+2. Run `tsc`
+3. Run `node dist/cli.js`
+4. Connect to `localhost:25564`
 
-# Usage
+***
 
-## Compiling
-
-```sh
-$ tsc
-```
-
-## Running
-Modify 'serviceHost' and 'servicePort' values in 'config.json' to yours and run:
-```sh
-$ ts-node -r tsconfig-paths/register dist/cli.js
-```
-
-## Credits
-
-<a href="https://github.com/diginet-ab/tcp-proxy">Server code</a>
+ProtonProxy is licensed under MIT License.
+Credits for <a href="https://github.com/diginet-ab/tcp-proxy">server code</a>.
