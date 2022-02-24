@@ -1,0 +1,5 @@
+{
+  "serviceHost": "mc.lastcraft.net",
+  "servicePort": 25565,
+  "localPort": 25564
+}
