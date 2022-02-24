@@ -1,9 +1,5 @@
-import * as fs from "fs";
-import * as net from "net";
-import * as tls from "tls";
-import { proxyOptions } from "@modules/proxyOptions";
-import * as log from "@modules/log";
-const mcData = require("minecraft-data")("1.18.1");
+import * as net from 'net';
+
 interface ProxyContext {
   buffers: Buffer[];
   connected: boolean;
@@ -11,15 +7,41 @@ interface ProxyContext {
   serviceSocket?: net.Socket;
 }
 
+/**
+ * Packet handler class
+ *
+ * @export
+ * @class PacketHandler
+ */
 export class PacketHandler {
-  constructor() {}
+/**
+ * Creates an instance of PacketHandler.
+ * @memberof PacketHandler
+ */
+  constructor() {
+    // dummy constructor
+  }
 
+  /**
+ * Handle incoming packet
+ *
+ * @param {ProxyContext} context
+ * @param {Buffer} data
+ * @memberof PacketHandler
+ */
   incoming(context: ProxyContext, data: Buffer) {
     if (context.proxySocket) {
       context.proxySocket.write(data);
     }
   }
 
+  /**
+ * Handle outcoming packet
+ *
+ * @param {ProxyContext} context
+ * @param {Buffer} data
+ * @memberof PacketHandler
+ */
   outcoming(context: ProxyContext, data: Buffer) {
     if (context.serviceSocket) {
       if (context.connected) {
@@ -30,5 +52,6 @@ export class PacketHandler {
     }
   }
 }
+
 
 export const createHandler = (): PacketHandler => new PacketHandler();
