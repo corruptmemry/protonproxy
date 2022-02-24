@@ -31,7 +31,7 @@ $ tsc
 ```
 
 ## Running
-
+Modify 'serviceHost' and 'servicePort' values in 'config.json' to yours and run:
 ```sh
 $ ts-node -r tsconfig-paths/register dist/cli.js
 ```
