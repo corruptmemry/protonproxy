@@ -1,7 +1,7 @@
-import * as colors from 'colors';
+import * as colors from "colors";
 
 export function info(s: string) {
-  console.info(`[${colors.blue('INFO')}] ${s}`);
+  console.info(`[${colors.blue("INFO")}] ${s}`);
 }
 
 export function custom(prefix: string, s: string) {
@@ -9,5 +9,5 @@ export function custom(prefix: string, s: string) {
 }
 
 export function error(s: string) {
-  console.error(`[${colors.red('ERROR')}] ${s}`);
+  console.error(`[${colors.red("ERROR")}] ${s}`);
 }
