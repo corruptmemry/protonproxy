@@ -37,6 +37,11 @@ And finally:
 3. Run `node dist/cli.js`
 4. Connect to `localhost:25564`
 
+
+### 💻 TODO
+| Idea | Progress |
+| ------ | ----------- |
+| Packet modifying/sending | Work in progress |
 ***
 
 ProtonProxy is licensed under MIT License.
