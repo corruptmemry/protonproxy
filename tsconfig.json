@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ES6",
     "module": "commonjs",
     "strict": true,
     "outDir": "dist",
     "sourceMap": true,
     "skipLibCheck": true,
     "baseUrl": "src",
+    "resolveJsonModule": true,
     "paths": {
       "@modules/*": ["modules/*"],
       "@plugins/*": ["plugins/*"]

@@ -17,19 +17,25 @@
 <br />
 
 # Requirements
+
 - Node.JS
 - tsc
 - ts-node
 
 # Usage
+
 ## Compiling
+
 ```sh
 $ tsc
 ```
+
 ## Running
+
 ```sh
 $ ts-node -r tsconfig-paths/register dist/cli.js
 ```
 
 ## Credits
+
 <a href="https://github.com/diginet-ab/tcp-proxy">Server code</a>
